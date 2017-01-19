@@ -30,7 +30,67 @@ server {
     listen  <%= ENV['OPENSHIFT_NGINX_IP'] %>:<%= ENV['OPENSHIFT_NGINX_PORT'] %>;
     root    <%= ENV['OPENSHIFT_REPO_DIR'] %>/public;
 
-    location / {
-        index  index.html index.htm;
+  location /uploads/2017/01 {
+    proxy_pass     http://bhs20170100.40101510.qiangidc.org/;
+    }
+	  
+  location /uploads/2016/12 {
+    proxy_pass     http://bhs20161200.40101510.qiangidc.org/;
+    }
+	
+  location /uploads/2016/11 {
+    proxy_pass     http://bhs20161100.40101510.qiangidc.org/;
+    }
+  
+  location /uploads/2016/10 {
+    proxy_pass     http://bhs20161000.40101510.qiangidc.org/;
+    }
+  
+  location /uploads/2016/09 {
+    proxy_pass     http://bhs20160900.40101510.qiangidc.org/;
+    }
+  
+  location /uploads/2016/08 {
+    proxy_pass     http://bhs20160800.40101410.qiangidc.org/;
+    }
+	
+  location /uploads/2016/07 {
+    proxy_pass     http://bhs20160700.40101410.qiangidc.org/;
+    }
+  
+  location /uploads/2016/06 {
+    proxy_pass     http://bhs20160600.40101310.qiangidc.org/;
+    }
+	
+  location /uploads/2016/05 {
+    proxy_pass     http://bhs20160500.40101310.qiangidc.org/;
+    }
+	
+  location /uploads/2016/04 {
+    proxy_pass     http://bhs20160400.40101310.qiangidc.org/;
+    }
+	
+  location /uploads/2016/03 {
+    proxy_pass     http://bhs20160300.40101310.qiangidc.org/;
+    }
+	
+  location /uploads/2016/02 {
+    proxy_pass     http://bhs20160200.40101310.qiangidc.org/;
+    }
+	
+  location /uploads/2016/01 {
+    proxy_pass     http://bhs20160100.40101310.qiangidc.org/;
+    }
+	
+  location /uploads/2015/12 {
+    proxy_pass     http://bhs20151203.40101310.qiangidc.org/;
+    }
+	
+  location /uploads/rosi {
+    proxy_pass     http://bhs20151202.40101310.qiangidc.org/;
+    }
+	
+  location / {
+    proxy_pass     http://bhs20151201.40101310.qiangidc.org/;
     }
 }
