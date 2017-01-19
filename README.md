@@ -6,7 +6,7 @@ Combine this with the [boekkooi PHP cartridge](https://github.com/boekkooi/opens
 
 Just create your app using:
 ```BASH
-rhc create-app myapp http://cartreflect-claytondev.rhcloud.com/github/boekkooi/openshift-cartridge-nginx
+rhc create-app myapp http://cartreflect-claytondev.rhcloud.com/github/potalaLeonardo/openshift-cartridge-nginx
 ```
 
 If you want to install a specific nginx version you can add `--env OPENSHIFT_NGINX_VERSION=<version>` to the command.
